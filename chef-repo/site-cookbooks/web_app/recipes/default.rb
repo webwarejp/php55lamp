@@ -22,13 +22,13 @@ directory '/var/www/html' do
   mode '0777'
 end
 
-directory "/srv/www/php55lamp/web" do
+directory "/vagrant/abtest/web" do
   owner 'vagrant'
   group 'vagrant'
   recursive true
   mode '0755'
   action :create
-  not_if { File.exists? "/srv/www/php55lamp/web" }
+  not_if { File.exists? "/vagrant/abtest/web" }
 end
 
 service "httpd"
@@ -36,7 +36,7 @@ service "httpd"
 include_recipe "apache2"
 execute "a2dissite default"
 web_app "php55lamp" do
-  docroot "/srv/www/php55lamp/web"
+  docroot "/vagrant/abtest/web"
   template "php55lamp.conf.erb"
   server_name node[:fqdn]
   server_aliases [node[:hostname], "php55lamp"]

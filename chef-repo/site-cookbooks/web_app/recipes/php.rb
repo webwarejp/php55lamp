@@ -7,6 +7,7 @@
 %w{php55u php55u-common php55u-cli  php55u-devel
 php55u-pgsql php55u-pdo php55u-mysql
 php55u-gd
+php55u-soap
 gd gd-devel
 php55u-pecl-jsonc
 php55u-intl php55u-mbstring
