@@ -1,4 +1,6 @@
-site :opscode
+source "https://api.berkshelf.com"
+
+metadata
 cookbook 'sudo'
 cookbook 'yum-repoforge'
 cookbook 'yum-ius'
