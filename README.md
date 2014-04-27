@@ -72,6 +72,7 @@ document rootは/vagrant/abtest/webとなっております。
     (php55lamp) $ ab -n 1000 -c 100 http://php55lamp/soap.php
     
 
-
-
+※補足
+PHPのGDのエラーがメモリ不足でる場合、 ``vagrant provision`` を実行し、provision.shを実行してください。
+swap設定を追加する設定が入っています。
 
