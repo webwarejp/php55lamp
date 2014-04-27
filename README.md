@@ -34,8 +34,12 @@ vagrantファイルでipを固定で割り振っています。
 
     $ vagrant up
 
+sshの設定をします。
+
+    $ vagrant ssh-config --host php55lamp >> ~/.ssh/config
+
 Berkshelf
-=========
+~~~~~~~~~
 
 chef-DK
 というツールをダウンロードしてきてインストールします。
@@ -50,6 +54,14 @@ Berkshelf3からはレシピは~/.berkshelf/以下にインストールされま
 berks installコマンドにてBerksfileに記載してあるrecipeを取得します。
 berks vendorコマンドで指定のpathにレシピを吐き出します。
 
+
+Chefの実行
+~~~~~~~~~~
+
+    $ cd chef-repo
+    $ knife solo prepare php55lamp
+    $ knife solo cook php55lamp
+    
 
 
 
