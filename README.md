@@ -39,7 +39,7 @@ sshの設定をします。
     $ vagrant ssh-config --host php55lamp >> ~/.ssh/config
 
 Berkshelf
-~~~~~~~~~
+---------
 
 chef-DK
 というツールをダウンロードしてきてインストールします。
@@ -56,7 +56,7 @@ berks vendorコマンドで指定のpathにレシピを吐き出します。
 
 
 Chefの実行
-~~~~~~~~~~
+----------
 
     $ cd chef-repo
     $ knife solo prepare php55lamp
