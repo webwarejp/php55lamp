@@ -63,7 +63,14 @@ Chefの実行
     $ knife solo cook php55lamp
     
 
+apache benchの実行
+------------------
 
+document rootは/vagrant/abtest/webとなっております。
+
+    $ ssh php55lamp
+    (php55lamp) $ ab -n 1000 -c 100 http://php55lamp/soap.php
+    
 
 
 
