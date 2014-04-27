@@ -117,4 +117,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   #   chef.validation_client_name = "ORGNAME-validator"
   config.vm.hostname = "php55lamp"
+  config.vm.provision :shell, :path => "provision.sh"
 end
