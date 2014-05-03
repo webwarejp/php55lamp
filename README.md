@@ -54,6 +54,8 @@ Berkshelf3からはレシピは~/.berkshelf/以下にインストールされま
 berks installコマンドにてBerksfileに記載してあるrecipeを取得します。
 berks vendorコマンドで指定のpathにレシピを吐き出します。
 
+berks installではレシピを ~/.berkshelf/cookbooks/ に配置します。
+berks vendor コマンドで実際のchef-repoのcookbooksフォルダにコピーをします。
 
 Chefの実行
 ----------
