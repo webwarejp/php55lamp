@@ -48,8 +48,7 @@ Berkshelf3からはレシピは~/.berkshelf/以下にインストールされま
 
     $ cd chef-repo/berksproj
     $ berks install
-    $ cd ..
-    $ berks vendor cookbooks
+    $ berks vendor ../cookbooks
 
 berks installコマンドにてBerksfileに記載してあるrecipeを取得します。
 berks vendorコマンドで指定のpathにレシピを吐き出します。
